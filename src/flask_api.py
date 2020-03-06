@@ -24,7 +24,7 @@ app.config['JSON_AS_ASCII'] = False
 
 @app.route('/query_sys&api_key=<api_key>/word=<keyword>&size=<size>')
 def api_query(api_key, keyword, size):
-    if api_key == "!WeLoVE-icRc":
+    if api_key == "********":
         try:
             size = int(size)
             assert size > 0
@@ -43,4 +43,4 @@ def api_query(api_key, keyword, size):
 
 
 if __name__ == '__main__':
-    app.run(port=21630)
+    app.run(port=5000)
